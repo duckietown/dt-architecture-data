@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  rosbridge:
+    image: duckietown/${ARCH:-arm32v7}-rpi-rosbridge-websocket:afdaniele-devel
+    restart: unless-stopped
+    network_mode: "host"
+    environment:
+      - VEHICLE_NAME=${VEHICLE_NAME:-}
+
+  car_interface:
+    image: duckietown/${ARCH:-arm32v7}-rpi-car-interface:master19
+    restart: unless-stopped
+    network_mode: "host"
+    environment:
+      - VEHICLE_NAME=${VEHICLE_NAME:-}
