@@ -2,10 +2,10 @@ version: '1'
 modules:
 
   duckiebot-interface:
-    module: dt-duckiebot-interface
+    type: dt-duckiebot-interface
 
   car-interface:
-    module: dt-car-interface
+    type: dt-car-interface
 
   core:
-    module: dt-core
+    type: dt-core
