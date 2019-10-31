@@ -3,27 +3,35 @@ modules:
 
   device-loader:
     type: dt-device-loader
+    unique: true
 
   device-online:
     type: dt-device-online
+    unique: true
 
   duckiebot-interface:
     type: dt-duckiebot-interface
+    unique: true
 
   car-interface:
     type: dt-car-interface
+    unique: true
 
   core:
     type: dt-core
 
   duckiebot-dashboard:
     type: dt-duckiebot-dashboard
+    unique: true
 
   ros-websocket:
     type: dt-ros-websocket
+    unique: true
 
   health:
     type: dt-health
+    unique: true
 
   files-api:
     type: dt-files-api
+    unique: true

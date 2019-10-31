@@ -3,9 +3,14 @@ modules:
 
   duckiebot-interface:
     type: dt-duckiebot-interface
+    required: true
+    unique: true
 
   car-interface:
     type: dt-car-interface
+    required: true
+    unique: true
 
   core:
     type: dt-core
+    required: true
