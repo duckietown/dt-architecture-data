@@ -1,0 +1,8 @@
+version: '1'
+modules:
+
+  duckiebot-interface:
+    module: dt-duckiebot-interface
+
+  car-interface:
+    module: dt-car-interface

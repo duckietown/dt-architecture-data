@@ -1,0 +1,29 @@
+version: '1'
+modules:
+
+  device-loader:
+    module: dt-device-loader
+
+  device-online:
+    module: dt-device-online
+
+  duckiebot-interface:
+    module: dt-duckiebot-interface
+
+  car-interface:
+    module: dt-car-interface
+
+  core:
+    module: dt-core
+
+  duckiebot-dashboard:
+    module: dt-duckiebot-dashboard
+
+  ros-websocket:
+    module: dt-ros-websocket
+
+  health:
+    module: dt-health
+
+  files-api:
+    module: dt-files-api
