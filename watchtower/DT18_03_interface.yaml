@@ -1,7 +1,7 @@
 version: '3'
 services:
 
-  duckiebot-interface:
+  dt-duckiebot-interface:
     image: duckietown/dt-duckiebot-interface:daffy-arm32v7
     container_name: duckiebot-interface
     restart: unless-stopped
@@ -14,7 +14,7 @@ services:
       # avahi services
       - /etc/avahi/services:/etc/avahi/services
 
-  car-interface:
+  dt-car-interface:
     image: duckietown/dt-car-interface:daffy-arm32v7
     container_name: car-interface
     restart: unless-stopped
@@ -27,7 +27,7 @@ services:
       # avahi services
       - /etc/avahi/services:/etc/avahi/services
 
-  ros-websocket:
+  dt-ros-websocket:
     image: duckietown/dt-rosbridge-websocket:daffy-arm32v7
     container_name: rosbridge-websocket
     restart: unless-stopped

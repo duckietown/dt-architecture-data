@@ -12,7 +12,7 @@ services:
       # avahi services
       - /etc/avahi/services:/etc/avahi/services
 
-  device-online:
+  dt-device-online:
     image: duckietown/dt-device-online:daffy-arm32v7
     container_name: device-online
     restart: always

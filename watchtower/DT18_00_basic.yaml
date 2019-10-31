@@ -19,7 +19,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
-  dashboard:
+  dt-duckiebot-dashboard:
     image: duckietown/dt-duckiebot-dashboard:daffy-arm32v7
     container_name: duckiebot-dashboard
     restart: unless-stopped
@@ -41,7 +41,7 @@ services:
       # docker socket
       - /var/run/docker.sock:/var/run/docker.sock
 
-  device-loader:
+  dt-device-loader:
     image: duckietown/dt-device-loader:daffy-arm32v7
     container_name: device-loader
     restart: on-failure
