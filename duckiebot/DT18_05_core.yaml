@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  core:
+    image: duckietown/dt-core:daffy-arm32v7
+    container_name: core
+    volumes:
+      # avahi services
+      - /etc/avahi/services:/etc/avahi/services
