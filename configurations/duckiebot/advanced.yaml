@@ -8,6 +8,10 @@ modules:
   device-online:
     type: dt-device-online
     unique: true
+  
+  device-health:
+    type: dt-device-health
+    unique: true
 
   duckiebot-interface:
     type: dt-duckiebot-interface
@@ -20,16 +24,12 @@ modules:
   core:
     type: dt-core
 
-  duckiebot-dashboard:
-    type: dt-duckiebot-dashboard
+  dashboard:
+    type: dt-dashboard
     unique: true
 
-  ros-websocket:
-    type: dt-ros-websocket
-    unique: true
-
-  health:
-    type: dt-health
+  rosbridge-websocket:
+    type: dt-rosbridge-websocket
     unique: true
 
   files-api:
