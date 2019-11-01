@@ -1,0 +1,15 @@
+version:
+  type: string
+  description: version of the module file
+
+name:
+  type: string
+  description: high-level name of the module
+
+description:
+  type: string
+  description: high-level description of the module
+
+icon:
+  type: string
+  description: icon for the module (from https://fontawesome.com/v4.7.0/icons/)

@@ -1,0 +1,20 @@
+version:
+  type: string
+  description: "Version of the configuration file"
+
+modules:
+  type: object
+  description: "Set of module objects"
+  _item:
+    type: object
+    description: "Single module object"
+    _content:
+      type:
+        type: string
+        description: "Type of the module"
+      unique:
+        type: boolean
+        description: "Whether the module is unique. At most one instance can run"
+      required:
+        type: boolean
+        description: "Whether the module is required. At least one instance has to run"
