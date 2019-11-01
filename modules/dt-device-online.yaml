@@ -1,0 +1,5 @@
+version: '1'
+
+name: 'dt-device-online'
+description: 'Broadcasts the status of a device in Duckietown'
+icon: globe

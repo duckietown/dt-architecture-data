@@ -1,0 +1,5 @@
+version: '1'
+
+name: 'dt-device-health'
+description: 'Provides an HTTP API to monitor the health of a device'
+icon: heartbeat

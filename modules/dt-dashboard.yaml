@@ -1,0 +1,5 @@
+version: '1'
+
+name: 'dt-dashboard'
+description: 'Dashboard based on \compose\ (http://compose.afdaniele.com) for Duckietown devices'
+icon: dashboard

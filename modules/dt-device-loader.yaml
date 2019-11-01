@@ -1,0 +1,5 @@
+version: '1'
+
+name: 'dt-device-loader'
+description: 'Configuration and code loader for devices in Duckietown'
+icon: download
