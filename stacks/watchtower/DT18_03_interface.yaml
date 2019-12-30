@@ -9,19 +9,7 @@ services:
     privileged: true
     environment:
       DISABLE_CONTRACTS: 1
-    volumes:
-      - /data:/data
-      # avahi services
-      - /etc/avahi/services:/etc/avahi/services
-
-  dt-car-interface:
-    image: duckietown/dt-car-interface:daffy-arm32v7
-    container_name: car-interface
-    restart: unless-stopped
-    network_mode: host
-    privileged: true
-    environment:
-      DISABLE_CONTRACTS: 1
+      ROBOT_TYPE: watchtower
     volumes:
       - /data:/data
       # avahi services

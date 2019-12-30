@@ -14,6 +14,13 @@ services:
       # avahi services
       - /etc/avahi/services:/etc/avahi/services
 
+  dt-roscore:
+    image: duckietown/dt-ros-kinetic-base:daffy-arm32v7
+    container_name: roscore
+    restart: unless-stopped
+    network_mode: host
+    command: roscore
+
   dt-car-interface:
     image: duckietown/dt-car-interface:daffy-arm32v7
     container_name: car-interface
