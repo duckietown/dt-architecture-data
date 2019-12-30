@@ -1,9 +1,9 @@
 version: '3'
 services:
 
-  rpi-health:
-    image: duckietown/rpi-health:master18
-    container_name: health
+  dt-device-health:
+    image: duckietown/dt-device-health:ente-${ARCH-arm32v7}
+    container_name: device-health
     restart: always
     network_mode: "host"
     devices:
@@ -13,7 +13,7 @@ services:
       - /etc/avahi/services:/etc/avahi/services
 
   dt-device-online:
-    image: duckietown/dt-device-online:daffy-arm32v7
+    image: duckietown/dt-device-online:ente-${ARCH-arm32v7}
     container_name: device-online
     restart: always
     network_mode: "host"
