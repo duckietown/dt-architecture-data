@@ -2,7 +2,7 @@ version: '3'
 services:
 
   dt-roscore:
-    image: duckietown/dt-ros-kinetic-base:ente-${ARCH-arm32v7}
+    image: duckietown/dt-ros-base:ente-${ARCH-arm32v7}
     container_name: roscore
     restart: unless-stopped
     network_mode: host

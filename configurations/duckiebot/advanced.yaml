@@ -8,9 +8,13 @@ modules:
   device-online:
     type: dt-device-online
     unique: true
-  
+
   device-health:
     type: dt-device-health
+    unique: true
+
+  ros-master:
+    type: dt-ros-base
     unique: true
 
   duckiebot-interface:

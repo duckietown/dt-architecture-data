@@ -1,6 +1,11 @@
 version: '1'
 modules:
 
+  ros-master:
+    type: dt-ros-base
+    required: true
+    unique: true
+
   duckiebot-interface:
     type: dt-duckiebot-interface
     required: true
