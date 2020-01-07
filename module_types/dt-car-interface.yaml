@@ -3,3 +3,6 @@ version: '1'
 name: 'dt-car-interface'
 description: 'Provides a high-level interface to the robot motion capabilities'
 icon: car
+functionalities:
+  - 'use a joystick to command the wheels'
+  - 'control the robot using chassis-level velocities'

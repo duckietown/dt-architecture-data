@@ -3,3 +3,5 @@ version: '1'
 name: 'dt-core'
 description: 'Provides high-level autonomy and fleet-coordination capabilities supported by the Duckietown community'
 icon: sitemap
+functionalities:
+  - 'support high-level functionalities, like autonomous driving and fleet-level coordination'

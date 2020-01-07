@@ -1,0 +1,10 @@
+version: '1'
+
+name: 'dt-duckiebot-interface'
+description: 'Contains all the necessary drivers to start sensors and actuators'
+icon: wrench
+functionalities:
+  - 'access the hardware of the robot (wheels, leds, etc.) using ROS'
+  - 'control the wheels of the robot'
+  - 'accept input from a physical joystick'
+  - 'access image stream from the camera'

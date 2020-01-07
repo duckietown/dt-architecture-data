@@ -1,5 +1,0 @@
-version: '1'
-
-name: 'dt-duckiebot-interface'
-description: 'Contains all the necessary drivers to start sensors and actuators'
-icon: wrench
