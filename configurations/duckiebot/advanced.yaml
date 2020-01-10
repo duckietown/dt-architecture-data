@@ -13,6 +13,10 @@ modules:
     type: dt-device-health
     unique: true
 
+  device-proxy:
+    type: dt-device-proxy
+    unique: true
+
   ros-master:
     type: dt-ros-base
     unique: true
