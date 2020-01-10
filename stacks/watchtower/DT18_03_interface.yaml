@@ -30,7 +30,7 @@ services:
       # avahi services
       - /etc/avahi/services:/etc/avahi/services
 
-  dt-ros-websocket:
+  dt-rosbridge-websocket:
     image: duckietown/dt-rosbridge-websocket:ente-${ARCH-arm32v7}
     container_name: rosbridge-websocket
     restart: unless-stopped
