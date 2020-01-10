@@ -2,14 +2,14 @@ version: '3'
 services:
 
   car-interface:
-    image: duckietown/${ARCH:-arm32v7}-car-interface:master19
+    image: duckietown/car-interface:master19-${ARCH:-arm32v7}
     restart: unless-stopped
     network_mode: "host"
     environment:
       - VEHICLE_NAME=${VEHICLE_NAME:- }
 
   supercamera:
-    image: duckietown/${ARCH:-arm32v7}-supercamera:master19
+    image: duckietown/supercamera:master19-${ARCH:-arm32v7}
     restart: unless-stopped
     network_mode: "host"
     environment:
