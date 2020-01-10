@@ -1,0 +1,7 @@
+version: '1'
+
+name: 'dt-device-proxy'
+description: 'Provides a nice mapping to APIs and services running on the robot'
+icon: exchange
+functionalities:
+  - 'use URLs like robot.local/dashboard/ or robot.local/files/ to access services and APIs'
