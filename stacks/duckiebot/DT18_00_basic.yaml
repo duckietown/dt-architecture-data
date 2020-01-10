@@ -14,7 +14,8 @@ services:
     image: duckietown/dt-duckiebot-dashboard:ente-${ARCH-arm32v7}
     container_name: duckiebot-dashboard
     restart: unless-stopped
-    network_mode: "host"
+    ports:
+      - "8080:80/tcp"
     volumes:
       - compose-data:/var/www/html
       # generic duckietown data
@@ -38,6 +39,15 @@ services:
       - /data:/data
       - /secrets:/secrets
       - /var/local:/var/local
+
+  dt-device-proxy:
+    image: duckietown/dt-device-proxy:ente-${ARCH-arm32v7}
+    container_name: device-proxy
+    restart: on-failure
+    network_mode: "host"
+    volumes:
+      # avahi services
+      - /etc/avahi/services:/etc/avahi/services
 
 volumes:
   compose-data:
