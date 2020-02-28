@@ -1,28 +1,37 @@
 version: '1'
 modules:
 
-  dt-device-loader:
+  device-loader:
+    type: dt-device-loader
     unique: true
 
-  dt-device-online:
+  device-online:
+    type: dt-device-online
     unique: true
   
-  dt-device-health:
+  device-health:
+    type: dt-device-health
     unique: true
 
-  dt-duckiebot-interface:
+  duckiebot-interface:
+    type: dt-duckiebot-interface
     unique: true
 
-  dt-car-interface:
+  car-interface:
+    type: dt-car-interface
     unique: true
 
-  dt-core:
+  core:
+    type: dt-core
 
-  dt-dashboard:
+  dashboard:
+    type: dt-dashboard
     unique: true
 
-  dt-rosbridge-websocket:
+  rosbridge-websocket:
+    type: dt-rosbridge-websocket
     unique: true
 
-  dt-files-api:
+  files-api:
+    type: dt-files-api
     unique: true
