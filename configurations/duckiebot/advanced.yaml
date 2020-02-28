@@ -1,4 +1,5 @@
 version: '1'
+description: 'Advanced (custom) configuration'
 modules:
 
   device-loader:
