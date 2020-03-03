@@ -1,0 +1,17 @@
+version: '1'
+
+name: 'dt-device-health'
+description: 'Provides an HTTP API to monitor the health of a device'
+icon: heartbeat
+functionalities:
+  - 'monitor the health of the device through a REST-API'
+configuration:
+  image: duckietown/dt-device-health:ente-${ARCH-arm32v7}
+  container_name: device-health
+  restart: always
+  network_mode: "host"
+  devices:
+    - /dev/vchiq:/dev/vchiq
+  volumes:
+    # avahi services
+    - /etc/avahi/services:/etc/avahi/services

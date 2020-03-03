@@ -1,0 +1,16 @@
+version: '1'
+
+name: 'dt-files-api'
+description: 'Provides an HTTP API to the /data directory of a device'
+icon: folder
+configuration:
+  image: duckietown/dt-files-api:ente-${ARCH-arm32v7}
+  container_name: files-api
+  restart: unless-stopped
+  ports:
+    - "8082:8082/tcp"
+  volumes:
+    - /data:/data
+    # avahi services
+    - /etc/avahi/services:/etc/avahi/services
+  working_dir: /data

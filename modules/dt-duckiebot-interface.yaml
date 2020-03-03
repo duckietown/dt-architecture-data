@@ -8,3 +8,13 @@ functionalities:
   - 'control the wheels of the robot'
   - 'accept input from a physical joystick'
   - 'access image stream from the camera'
+configuration:
+  image: duckietown/dt-duckiebot-interface:ente-${ARCH-arm32v7}
+  container_name: duckiebot-interface
+  restart: unless-stopped
+  network_mode: host
+  privileged: true
+  volumes:
+    - /data:/data
+    # avahi services
+    - /etc/avahi/services:/etc/avahi/services

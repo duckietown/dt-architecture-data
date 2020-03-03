@@ -1,0 +1,19 @@
+version: '1'
+
+name: 'dt-dashboard'
+description: 'Dashboard based on \compose\ (http://compose.afdaniele.com) for Duckietown devices'
+icon: dashboard
+functionalities:
+  - 'use a web browser to monitor and control the robot'
+configuration:
+  image: duckietown/dt-duckiebot-dashboard:ente-${ARCH-arm32v7}
+  container_name: duckiebot-dashboard
+  restart: unless-stopped
+  ports:
+    - "8080:80/tcp"
+  volumes:
+    - compose-data:/var/www/html
+    # generic duckietown data
+    - /data:/robot/data
+    # avahi services
+    - /etc/avahi/services:/etc/avahi/services

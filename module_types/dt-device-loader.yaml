@@ -1,7 +1,0 @@
-version: '1'
-
-name: 'dt-device-loader'
-description: 'Configuration and code loader for devices in Duckietown'
-icon: download
-functionalities:
-  - 'automatically run all the necessary modules at startup'

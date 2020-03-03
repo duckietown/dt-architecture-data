@@ -5,3 +5,9 @@ description: 'Provides high-level autonomy and fleet-coordination capabilities s
 icon: sitemap
 functionalities:
   - 'support high-level functionalities, like autonomous driving and fleet-level coordination'
+configuration:
+  image: duckietown/dt-core:ente-${ARCH-arm32v7}
+  container_name: core
+  volumes:
+    # avahi services
+    - /etc/avahi/services:/etc/avahi/services

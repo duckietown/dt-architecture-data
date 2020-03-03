@@ -1,5 +1,0 @@
-version: '1'
-
-name: 'dt-rosbridge-websocket'
-description: 'WebSocket bridge from the RosBridge suite (http://wiki.ros.org/rosbridge_suite)'
-icon: exchange

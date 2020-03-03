@@ -1,0 +1,13 @@
+version: '1'
+
+name: 'dt-rosbridge-websocket'
+description: 'WebSocket bridge from the RosBridge suite (http://wiki.ros.org/rosbridge_suite)'
+icon: exchange
+configuration:
+  image: duckietown/dt-rosbridge-websocket:ente-${ARCH-arm32v7}
+  container_name: rosbridge-websocket
+  restart: unless-stopped
+  network_mode: "host"
+  volumes:
+    # avahi services
+    - /etc/avahi/services:/etc/avahi/services
