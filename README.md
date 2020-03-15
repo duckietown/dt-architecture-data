@@ -1,3 +1,3 @@
-# dt-docker-stacks
+# dt-architecture-data
 
-Collection of stacks descriptors (yaml files) for docker-compose
+Collection of modules and configurations descriptors (yaml files) for the dt-architecture-api module in Duckietown.
