@@ -16,8 +16,8 @@ services:
     privileged: true
     volumes:
       - /data:/data
-      # avahi services
-      - /etc/avahi/services:/etc/avahi/services
+      # avahi socket
+      - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
 
   dt-car-interface:
     image: duckietown/dt-car-interface:ente-${ARCH-arm32v7}
@@ -27,8 +27,8 @@ services:
     privileged: true
     volumes:
       - /data:/data
-      # avahi services
-      - /etc/avahi/services:/etc/avahi/services
+      # avahi socket
+      - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
 
   dt-rosbridge-websocket:
     image: duckietown/dt-rosbridge-websocket:ente-${ARCH-arm32v7}
@@ -36,8 +36,8 @@ services:
     restart: unless-stopped
     network_mode: "host"
     volumes:
-      # avahi services
-      - /etc/avahi/services:/etc/avahi/services
+      # avahi socket
+      - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
 
   dt-files-api:
     image: duckietown/dt-files-api:ente-${ARCH-arm32v7}
@@ -47,6 +47,6 @@ services:
       - "8082:8082/tcp"
     volumes:
       - /data:/data
-      # avahi services
-      - /etc/avahi/services:/etc/avahi/services
+      # avahi socket
+      - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
     working_dir: /data

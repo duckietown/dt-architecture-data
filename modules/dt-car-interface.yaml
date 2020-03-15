@@ -14,5 +14,5 @@ configuration:
   privileged: true
   volumes:
     - /data:/data
-    # avahi services
-    - /etc/avahi/services:/etc/avahi/services
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

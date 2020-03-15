@@ -11,6 +11,6 @@ configuration:
     - "8082:8082/tcp"
   volumes:
     - /data:/data
-    # avahi services
-    - /etc/avahi/services:/etc/avahi/services
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
   working_dir: /data

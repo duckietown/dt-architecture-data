@@ -9,5 +9,5 @@ configuration:
   restart: unless-stopped
   network_mode: "host"
   volumes:
-    # avahi services
-    - /etc/avahi/services:/etc/avahi/services
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

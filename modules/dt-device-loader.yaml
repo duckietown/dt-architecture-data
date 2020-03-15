@@ -15,8 +15,8 @@ configuration:
   volumes:
     # docker socket
     - /var/run/docker.sock:/var/run/docker.sock
-    # avahi services
-    - /etc/avahi/services:/etc/avahi/services
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
     # duckietown data
     - /data:/data
     - /secrets:/secrets

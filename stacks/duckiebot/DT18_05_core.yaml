@@ -5,5 +5,5 @@ services:
     image: duckietown/dt-core:ente-${ARCH-arm32v7}
     container_name: core
     volumes:
-      # avahi services
-      - /etc/avahi/services:/etc/avahi/services
+      # avahi socket
+      - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

@@ -14,5 +14,5 @@ configuration:
     - /data:/data
     - /secrets:/secrets
     - /var/local:/var/local
-    # avahi services
-    - /etc/avahi/services:/etc/avahi/services
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

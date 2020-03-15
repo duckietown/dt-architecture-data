@@ -13,5 +13,5 @@ configuration:
   devices:
     - /dev/vchiq:/dev/vchiq
   volumes:
-    # avahi services
-    - /etc/avahi/services:/etc/avahi/services
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

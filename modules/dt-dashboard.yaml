@@ -15,5 +15,5 @@ configuration:
     - compose-data:/var/www/html
     # generic duckietown data
     - /data:/robot/data
-    # avahi services
-    - /etc/avahi/services:/etc/avahi/services
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
