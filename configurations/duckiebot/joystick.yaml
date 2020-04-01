@@ -11,4 +11,3 @@ modules:
     type: dt-car-interface
     required: true
     unique: true
-    launcher: joystick
