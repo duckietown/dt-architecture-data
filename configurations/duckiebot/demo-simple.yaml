@@ -20,3 +20,7 @@ modules:
   core:
     type: dt-core
     required: true
+
+  portainer:
+    type: portainer
+    required: true
