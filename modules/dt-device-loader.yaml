@@ -3,3 +3,22 @@ version: '1'
 name: 'dt-device-loader'
 description: 'Configuration and code loader for devices in Duckietown'
 icon: download
+functionalities:
+  - 'automatically run all the necessary modules at startup'
+configuration:
+  image: duckietown/dt-device-loader:${major}-${arch}
+  container_name: device-loader
+  restart: on-failure
+  network_mode: host
+  environment:
+    - EXCLUDE_RUN=DT18_00_basic
+  volumes:
+    # docker socket
+    - /var/run/docker.sock:/var/run/docker.sock
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
+    # duckietown data
+    - /data:/data
+    # TODO: check if these are necessary
+    - /secrets:/secrets
+    - /var/local:/var/local

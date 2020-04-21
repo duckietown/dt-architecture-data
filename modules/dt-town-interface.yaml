@@ -1,0 +1,17 @@
+version: '1'
+
+name: 'dt-town-interface'
+description: 'Provides a town interface as multi-architecture API'
+icon: home
+functionalities:
+  - 'to be added'
+configuration:
+  image: duckietown/dt-town-interface:${major}-${arch}
+  container_name: dt-town-interface
+  restart: unless-stopped
+  network_mode: host
+  privileged: true
+  volumes:
+    - /data:/data
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

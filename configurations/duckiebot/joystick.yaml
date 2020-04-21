@@ -2,6 +2,11 @@ version: '1'
 description: 'Joystick demo'
 modules:
 
+  ros-master:
+    type: dt-ros-base
+    required: true
+    unique: true
+
   duckiebot-interface:
     type: dt-duckiebot-interface
     required: true

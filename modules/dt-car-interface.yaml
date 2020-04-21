@@ -3,3 +3,16 @@ version: '1'
 name: 'dt-car-interface'
 description: 'Provides a high-level interface to the robot motion capabilities'
 icon: car
+functionalities:
+  - 'use a joystick to command the wheels'
+  - 'control the robot using chassis-level velocities'
+configuration:
+  image: duckietown/dt-car-interface:${major}-${arch}
+  container_name: car-interface
+  restart: unless-stopped
+  network_mode: host
+  privileged: true
+  volumes:
+    - /data:/data
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

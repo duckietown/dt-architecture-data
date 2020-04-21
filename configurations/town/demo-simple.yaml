@@ -1,0 +1,25 @@
+version: '1'
+
+description: 'Simple demo for town configuration'
+modules:
+
+  dt-town-interface:
+    type: dt-town-interface
+    required: true
+    unique: true
+
+  device-health:
+    type: dt-device-health
+    required: true
+    unique: true
+
+
+devices:
+
+  duckiebot:
+    configurations:
+      - demo-simple
+
+  watchtower:
+    configurations:
+      - demo-simple

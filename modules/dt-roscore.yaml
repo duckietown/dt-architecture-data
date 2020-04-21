@@ -1,0 +1,11 @@
+version: '1'
+
+name: 'roscore'
+description: 'Provides portainer access to manage docker.'
+icon: archive
+configuration:
+  image: duckietown/dt-ros-base:${major}-${arch}
+  container_name: roscore
+  restart: unless-stopped
+  network_mode: host
+  command: roscore
