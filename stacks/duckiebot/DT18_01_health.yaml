@@ -5,7 +5,7 @@ services:
     image: duckietown/rpi-health:master18
     container_name: health
     restart: always
-    network_mode: "host"
+    network_mode: host
     devices:
       - /dev/vchiq:/dev/vchiq
     volumes:
@@ -16,7 +16,7 @@ services:
     image: duckietown/dt-device-online:daffy-arm32v7
     container_name: device-online
     restart: always
-    network_mode: "host"
+    network_mode: host
     volumes:
       - /data:/data
       - /secrets:/secrets

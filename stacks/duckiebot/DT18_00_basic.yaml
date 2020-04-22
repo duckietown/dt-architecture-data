@@ -6,7 +6,7 @@ services:
     container_name: portainer
     command: ["--host=unix:///var/run/docker.sock", "--no-auth"]
     restart: always
-    network_mode: "host"
+    network_mode: host
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
@@ -15,7 +15,7 @@ services:
     container_name: watchtower
     command: ["--cleanup"]
     restart: always
-    network_mode: "host"
+    network_mode: host
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
@@ -23,7 +23,7 @@ services:
     image: duckietown/dt-duckiebot-dashboard:daffy-arm32v7
     container_name: duckiebot-dashboard
     restart: unless-stopped
-    network_mode: "host"
+    network_mode: host
     volumes:
       - compose-data:/var/www/html
       # cloud-init userdata file
@@ -45,7 +45,7 @@ services:
     image: duckietown/dt-device-loader:daffy-arm32v7
     container_name: device-loader
     restart: on-failure
-    network_mode: "host"
+    network_mode: host
     environment:
       - EXCLUDE_RUN=DT18_00_basic
     volumes:
