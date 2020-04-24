@@ -1,0 +1,10 @@
+version: '1'
+
+description: 'Naming convention for devices listed in an autolab'
+devices:
+
+  duckiebot:
+    - autobotXX
+
+  watchtower:
+    - watchtowerXX

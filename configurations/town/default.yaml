@@ -1,0 +1,29 @@
+version: '1'
+
+description: 'Default configuration upon initialization, no fleet specs'
+modules:
+
+  town-interface:
+    type: dt-town-interface
+    required: true
+    unique: true
+
+  device-health:
+    type: dt-device-health
+    unique: true
+
+  dashboard:
+      type: dt-dashboard
+      unique: true
+
+  portainer:
+    type: portainer
+    required: true
+
+  device-loader:
+    type: dt-device-loader
+    unique: true
+
+  device-online:
+    type: dt-device-online
+    unique: true
