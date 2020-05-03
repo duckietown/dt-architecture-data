@@ -4,5 +4,3 @@ description: 'Development fleet file for Town API'
 devices:
 
   - rom
-  - watchtower99
-  - watchtower98
