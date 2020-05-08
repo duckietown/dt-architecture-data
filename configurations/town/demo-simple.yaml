@@ -17,9 +17,7 @@ modules:
 devices:
 
   duckiebot:
-    configuration:
-      - demo-simple
+    configuration: demo-simple
 
   watchtower:
-    configuration:
-      - demo-simple
+    configuration: demo-simple
