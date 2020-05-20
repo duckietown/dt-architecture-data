@@ -2,11 +2,6 @@ version: '1'
 description: 'Simple demo'
 modules:
 
-  ros-master:
-    type: dt-ros-base
-    required: true
-    unique: true
-
   duckiebot-interface:
     type: dt-duckiebot-interface
     required: true
