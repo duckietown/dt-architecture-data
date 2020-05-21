@@ -18,6 +18,3 @@ devices:
 
   duckiebot:
     configuration: demo-simple
-
-  watchtower:
-    configuration: demo-simple
