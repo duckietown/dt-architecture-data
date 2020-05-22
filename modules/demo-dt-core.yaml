@@ -1,0 +1,15 @@
+version: '1'
+
+name: 'demo-dt-core'
+description: 'dt-core file for lane_following demo'
+icon: sitemap
+functionalities:
+  - 'support high-level functionalities, like autonomous driving and fleet-level coordination'
+configuration:
+  image: duckietown/dt-core:ente-${ARCH-arm32v7}
+  command: dt_exec roslaunch duckietown_demos lane_following.launch veh:=$VEHICLE_NAME
+  container_name: core
+  network_mode: "host"
+  volumes:
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket

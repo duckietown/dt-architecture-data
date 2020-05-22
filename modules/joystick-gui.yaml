@@ -1,0 +1,18 @@
+version: '1'
+
+name: 'joystick-gui'
+description: 'joystick controller for Duckiebot'
+icon: sitemap
+functionalities:
+  - 'joystick controller using gui'
+configuration:
+  image: duckietown/dt-core:ente-${ARCH-arm32v7}
+  command: dt_exec roslaunch virtual_joystick virtual_joystick_gui.launch veh:=$VEHICLE_NAME
+  container_name: "joystick_gui_%s" % veh
+  network_mode: "host"
+  privileged: true
+  volumes:
+    # avahi socket
+    - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
+    # run_gui_controller
+    - /tmp/.X11-unix:/tmp/.X11-unix
