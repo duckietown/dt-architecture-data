@@ -6,7 +6,7 @@ icon: dashboard
 functionalities:
   - 'use a web browser to monitor and control the robot'
 configuration:
-  image: duckietown/dt-duckiebot-dashboard:daffy-${ARCH-arm32v7}
+  image: duckietown/dt-duckiebot-dashboard:ente-${ARCH-arm32v7}
   container_name: duckiebot-dashboard
   restart: unless-stopped
   ports:

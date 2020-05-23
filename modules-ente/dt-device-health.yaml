@@ -6,7 +6,7 @@ icon: heartbeat
 functionalities:
   - 'monitor the health of the device through a REST-API'
 configuration:
-  image: duckietown/dt-device-health:daffy-${ARCH-arm32v7}
+  image: duckietown/dt-device-health:ente-${ARCH-arm32v7}
   container_name: device-health
   restart: always
   network_mode: "host"

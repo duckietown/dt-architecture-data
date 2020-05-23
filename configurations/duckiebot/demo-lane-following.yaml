@@ -7,24 +7,17 @@ modules:
     type: dt-duckiebot-interface
     required: true
     unique: true
-    command: dt-launcher-all_drivers.launch
 
   car-interface:
     type: dt-car-interface
     required: true
     unique: true
-    command: dt-launcher-all.launch
 
   core:
     type: dt-core
     required: true
     unique: true
     command: dt-launcher-lane_following.launch
-
-  joystick-gui:
-    type: joystick-gui
-    required: true
-    command: dt-launcher-virtual_joystick_gui.launch
 
   portainer:
     type: portainer

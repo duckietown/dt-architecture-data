@@ -6,7 +6,7 @@ icon: download
 functionalities:
   - 'automatically run all the necessary modules at startup'
 configuration:
-  image: duckietown/dt-device-loader:daffy-${ARCH-arm32v7}
+  image: duckietown/dt-device-loader:ente-${ARCH-arm32v7}
   container_name: device-loader
   restart: on-failure
   network_mode: "host"

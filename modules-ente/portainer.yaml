@@ -1,0 +1,14 @@
+version: '1'
+
+name: 'portainer'
+description: 'Provides portainer access to manage docker.'
+icon: archive
+configuration:
+  image: portainer/portainer:linux-arm
+  container_name: portainer
+  command: ["--host=unix:///var/run/docker.sock", "--no-auth"]
+  restart: always
+  network_mode: "host"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+

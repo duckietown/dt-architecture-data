@@ -6,7 +6,7 @@ icon: exchange
 functionalities:
   - 'use URLs like robot.local/dashboard/ or robot.local/files/ to access services and APIs'
 configuration:
-  image: duckietown/dt-device-proxy:daffy-${ARCH-arm32v7}
+  image: duckietown/dt-device-proxy:ente-${ARCH-arm32v7}
   container_name: device-proxy
   restart: on-failure
   network_mode: "host"

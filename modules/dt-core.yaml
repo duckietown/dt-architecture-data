@@ -6,7 +6,7 @@ icon: sitemap
 functionalities:
   - 'support high-level functionalities, like autonomous driving and fleet-level coordination'
 configuration:
-  image: duckietown/dt-core:ente-${ARCH-arm32v7}
+  image: duckietown/dt-core:daffy-${ARCH-arm32v7}
   container_name: core
   network_mode: "host"
   volumes:

@@ -7,7 +7,7 @@ functionalities:
   - 'use a joystick to command the wheels'
   - 'control the robot using chassis-level velocities'
 configuration:
-  image: duckietown/dt-car-interface:daffy-${ARCH-arm32v7}
+  image: duckietown/dt-car-interface:ente-${ARCH-arm32v7}
   container_name: car-interface
   restart: unless-stopped
   network_mode: host

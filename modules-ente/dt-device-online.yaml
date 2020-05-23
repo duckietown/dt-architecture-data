@@ -6,7 +6,7 @@ icon: globe
 functionalities:
   - 'collect anonymous statistics about usage and crashes of the robot'
 configuration:
-  image: duckietown/dt-device-online:daffy-${ARCH-arm32v7}
+  image: duckietown/dt-device-online:ente-${ARCH-arm32v7}
   container_name: device-online
   restart: always
   network_mode: "host"
