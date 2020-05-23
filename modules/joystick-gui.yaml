@@ -4,11 +4,10 @@ name: 'joystick-gui'
 description: 'joystick controller for Duckiebot'
 icon: sitemap
 functionalities:
-  - 'joystick controller using gui'
+  - 'virutal joystick controller using gui'
 configuration:
   image: duckietown/dt-core:ente-${ARCH-arm32v7}
-  command: dt_exec roslaunch virtual_joystick virtual_joystick_gui.launch veh:=$VEHICLE_NAME
-  container_name: "joystick_gui_%s" % veh
+  container_name: joystick-gui
   network_mode: "host"
   privileged: true
   volumes:

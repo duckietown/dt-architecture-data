@@ -1,6 +1,0 @@
-version: '1'
-
-description: 'Development fleet file for Town API'
-devices:
-
-  - rom

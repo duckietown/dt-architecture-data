@@ -1,6 +1,6 @@
 version: '1'
 
-description: 'Simple demo for town configuration'
+description: 'Lane following demo for a town in ente'
 modules:
 
   town-interface:
@@ -17,5 +17,4 @@ modules:
 devices:
 
   duckiebot:
-    configuration: demo-simple
-    required: true
+    configuration: demo-lane-following

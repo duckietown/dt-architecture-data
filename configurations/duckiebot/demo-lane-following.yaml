@@ -1,24 +1,30 @@
 version: '1'
-description: 'Lane following demo in ente'
+
+description: 'Lane following demo for a Duckiebot in ente using gui'
 modules:
 
   duckiebot-interface:
     type: dt-duckiebot-interface
     required: true
     unique: true
+    command: dt-launcher-all_drivers.launch
 
   car-interface:
     type: dt-car-interface
     required: true
     unique: true
+    command: dt-launcher-all.launch
 
   core:
-    type: demo-dt-core
+    type: dt-core
     required: true
+    unique: true
+    command: dt-launcher-lane_following.launch
 
-  joystick:
-    type: joystick
+  joystick-gui:
+    type: joystick-gui
     required: true
+    command: dt-launcher-virtual_joystick_gui.launch
 
   portainer:
     type: portainer
