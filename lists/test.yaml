@@ -4,3 +4,4 @@ description: 'Development fleet file for Architecture API in town as a robot'
 devices:
 
   - rom
+  - ram
