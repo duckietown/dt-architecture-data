@@ -13,7 +13,7 @@ modules:
     required: true
     unique: true
 
-  core:
+  core-lf:
     type: dt-core-lf
     required: true
     unique: true
