@@ -17,7 +17,6 @@ modules:
     type: dt-core
     required: true
     unique: true
-    command: dt-launcher-lane_following.launch
 
   portainer:
     type: portainer
