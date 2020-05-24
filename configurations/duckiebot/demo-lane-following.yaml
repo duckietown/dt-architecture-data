@@ -14,7 +14,7 @@ modules:
     unique: true
 
   core:
-    type: dt-core
+    type: dt-core-lf
     required: true
     unique: true
 
