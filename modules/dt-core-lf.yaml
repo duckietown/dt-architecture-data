@@ -10,10 +10,10 @@ configuration:
   container_name: core-lf
   network_mode: "host"
   privileged: True
-  mem_limit: "800m"
-  memswap_limit: "2800m"
+  #mem_limit: "800m"
+  #memswap_limit: "2800m"
   stdin_open: True
-  tty: True
+  #tty: True
   detach: True
   #environment:
   #  ROS_MASTER: rom
