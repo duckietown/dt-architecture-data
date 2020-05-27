@@ -12,9 +12,9 @@ configuration:
   privileged: True
   #mem_limit: "800m"
   #memswap_limit: "2800m"
-  stdin_open: True
+  #stdin_open: True
   #tty: True
-  detach: True
+  #detach: True
   #environment:
   #  ROS_MASTER: rom
   #  DUCKIEBOT_NAME: rom
