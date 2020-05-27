@@ -13,8 +13,8 @@ modules:
     required: true
     unique: true
 
-  core:
-    type: dt-core
+  core-lf:
+    type: dt-core-lf
     required: true
     unique: true
     command: roslaunch duckietown_demos lane_following.launch

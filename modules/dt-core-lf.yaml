@@ -6,9 +6,21 @@ icon: sitemap
 functionalities:
   - 'support high-level functionalities, s.a. autonomous driving and fleet-level coordination'
 configuration:
-  image: duckietown/dt-core:daffy-lf-${ARCH-arm32v7}
+  image: duckietown/dt-core:daffy-${ARCH-arm32v7}
   container_name: core-lf
   network_mode: "host"
+  privileged: True
+  mem_limit: "800m"
+  memswap_limit: "2800m"
+  stdin_open: True
+  tty: True
+  detach: True
+  environment: env_vars
+  restart_policy:
+    Name: "on-failure"
+    MaximumRetryCount: 2
   volumes:
+    # duckiebot data
+    - /data:/data
     # avahi socket
     - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
