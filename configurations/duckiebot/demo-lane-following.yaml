@@ -13,10 +13,11 @@ modules:
     required: true
     unique: true
 
-  core-lf:
-    type: dt-core-lf
+  core:
+    type: dt-core
     required: true
     unique: true
+    command: roslaunch duckietown_demos lane_following.launch
 
   portainer:
     type: portainer
