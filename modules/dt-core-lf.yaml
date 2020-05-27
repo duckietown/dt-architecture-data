@@ -15,19 +15,19 @@ configuration:
   stdin_open: True
   tty: True
   detach: True
-  environment:
-    ROS_MASTER: rom
-    DUCKIEBOT_NAME: rom
-    ROS_MASTER_URI: http://192.168.1.249:11311
-    DUCKIEFLEET_ROOT: /data/config
-    DUCKIEBOT_IP: 192.168.1.249
-    DUCKIETOWN_SERVER: 192.168.1.249
-    QT_X11_NO_MITSHM: 1
-    VEHICLE_NAME: rom
-    VEHICLE_IP: 192.168.1.249
-  restart_policy:
-    Name: "on-failure"
-    MaximumRetryCount: 2
+  #environment:
+  #  ROS_MASTER: rom
+  #  DUCKIEBOT_NAME: rom
+  #  ROS_MASTER_URI: http://192.168.1.249:11311
+  #  DUCKIEFLEET_ROOT: /data/config
+  #  DUCKIEBOT_IP: 192.168.1.249
+  #  DUCKIETOWN_SERVER: 192.168.1.249
+  #  QT_X11_NO_MITSHM: 1
+  #  VEHICLE_NAME: rom
+  #  VEHICLE_IP: 192.168.1.249
+  #restart_policy:
+  #  Name: "on-failure"
+  #  MaximumRetryCount: 2
   volumes:
     # duckiebot data
     - /data:/data
