@@ -18,4 +18,3 @@ devices:
 
   duckiebot:
     configuration: demo-simple
-    required: true
